@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/main.css" />
+
+    <style>
+      .container-test {
+        margin: 2rem;
+        display: grid;
+        gap: 2rem;
+        justify-content: start;
+      }
+    </style>
+
+    <title>MEDSoft</title>
+  </head>
+  <body>
+    <!-- COMPONENTS -->
+    <div class="container-test">
+      <!-- CHART -->
+      <div class="chart" style="--porcentagem-chart: 9">
+        <div class="chart__external">
+          <div class="chart__internal">
+            <span class="chart__text">9%</span>
+          </div>
+        </div>
+      </div>
+      <!-- ! CHART -->
+
+      <!-- PROGRESS  -->
+      <div class="progress" style="--porcentagem-progress: 90">&nbsp;</div>
+      <!-- ! PROGRESS  -->
+
+      <!-- THUMB VIDEO  -->
+      <div class="thumb">
+        <img
+          src="./assets/img/foto.png"
+          alt="Video of a class"
+          class="thumb__img"
+        />
+        <div class="progress" style="--porcentagem-progress: 90">&nbsp;</div>
+        <ion-icon name="play-circle-outline" class="thumb__icon"></ion-icon>
+      </div>
+      <!-- ! THUMB VIDEO  -->
+
+      <!-- BUTTON MEDIMAGEM  -->
+      <button class="button-medimagem">
+        <span class="button-medimagem__text">2021 Medimagem</span>
+        <ion-icon
+          name="chevron-down-outline"
+          class="button-medimagem__icon"
+        ></ion-icon>
+      </button>
+      <!-- ! BUTTON MEDIMAGEM  -->
+
+      <!-- NOTIFICATION   -->
+      <div class="notification">
+        <button class="notification__button">
+          <ion-icon
+            name="notifications-outline"
+            class="notification__icon"
+          ></ion-icon>
+        </button>
+        <span class="notification__number">234</span>
+      </div>
+      <!-- ! NOTIFICATION   -->
+
+      <!-- DURATION   -->
+      <div class="duration">
+        <ion-icon name="time-outline" class="duration__icon"></ion-icon>
+        <span class="duration__time">00:07:25</span>
+      </div>
+      <!-- ! DURATION   -->
+
+      <!-- ACCORDION   -->
+      <div class="accordion open">
+        <div class="accordion__header">
+          <div class="active-class">
+            <div class="active-class__box">
+              <div class="thumb">
+                <img
+                  src="./assets/img/foto.png"
+                  alt="Video of a class"
+                  class="thumb__img"
+                />
+                <div class="progress" style="--porcentagem-progress: 90">
+                  &nbsp;
+                </div>
+                <ion-icon
+                  name="play-circle-outline"
+                  class="thumb__icon"
+                ></ion-icon>
+              </div>
+              <div class="active-class__text-box">
+                <p class="active-class__text">
+                  Estômago e Esôfago; Intestino; Pâncreas
+                </p>
+                <div class="duration">
+                  <ion-icon
+                    name="time-outline"
+                    class="duration__icon"
+                  ></ion-icon>
+                  <span class="duration__time">00:53:13</span>
+                </div>
+              </div>
+            </div>
+            <button class="active-class__button">
+              <ion-icon
+                name="chevron-down-outline"
+                class="active-class__icon"
+              ></ion-icon>
+            </button>
+          </div>
+        </div>
+        <!-- ! accordion header -->
+
+        <!-- accordion content -->
+        <div class="accordion__content">
+          <ul class="class-list">
+            <li class="class-list__item">
+              <div class="class-list__name">
+                <ion-icon
+                  name="play-circle-outline"
+                  class="class-list__icon class-list__icon--green"
+                ></ion-icon>
+                <p class="class-list__text">Síndrome Coronariana Aguda</p>
+              </div>
+              <div class="class-list__time">
+                <div class="duration">
+                  <span class="duration__time">00:31:00</span>
+                </div>
+                <button class="class-list__button">
+                  <ion-icon
+                    name="chevron-forward-outline"
+                    class="class-list__icon"
+                  ></ion-icon>
+                </button>
+              </div>
+            </li>
+            <li class="class-list__item">
+              <div class="class-list__name">
+                <ion-icon
+                  name="play-circle-outline"
+                  class="class-list__icon class-list__icon--green"
+                ></ion-icon>
+                <p class="class-list__text">Síndrome Coronariana Aguda</p>
+              </div>
+              <div class="class-list__time">
+                <div class="duration">
+                  <span class="duration__time">00:31:00</span>
+                </div>
+                <button class="class-list__button">
+                  <ion-icon
+                    name="chevron-forward-outline"
+                    class="class-list__icon"
+                  ></ion-icon>
+                </button>
+              </div>
+            </li>
+            <li class="class-list__item">
+              <div class="class-list__name">
+                <ion-icon
+                  name="play-circle-outline"
+                  class="class-list__icon class-list__icon--green"
+                ></ion-icon>
+                <p class="class-list__text">Síndrome Coronariana Aguda</p>
+              </div>
+              <div class="class-list__time">
+                <div class="duration">
+                  <span class="duration__time">00:31:00</span>
+                </div>
+                <button class="class-list__button">
+                  <ion-icon
+                    name="chevron-forward-outline"
+                    class="class-list__icon"
+                  ></ion-icon>
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- ! accordion content -->
+      </div>
+      <!-- ! ACCORDION   -->
+
+      <!-- NAV-LIST -->
+      <ul class="nav-list">
+        <li class="nav-list__item">
+          <a href="#" class="nav-list__link nav-list__link--active">
+            <ion-icon
+              name="play-circle-outline"
+              class="nav-list__icon"
+            ></ion-icon>
+            <span>Aulas</span>
+          </a>
+        </li>
+        <li class="nav-list__item">
+          <a href="#" class="nav-list__link">
+            <ion-icon name="book-outline" class="nav-list__icon"></ion-icon>
+            <span>Materiais</span>
+          </a>
+        </li>
+        <li class="nav-list__item">
+          <a href="#" class="nav-list__link">
+            <ion-icon name="checkbox-outline" class="nav-list__icon"></ion-icon>
+            <span>Questões</span>
+          </a>
+        </li>
+      </ul>
+      <!-- ! NAV-LIST -->
+
+      <!-- NAV ACCORDION -->
+      <div class="accordion open">
+        <div class="accordion__header">
+          <div class="subsection">
+            <h3 class="heading-tertiary">Mentoria</h3>
+            <button class="subsection__button">
+              <ion-icon
+                name="chevron-down-outline"
+                class="subsection__icon"
+              ></ion-icon>
+            </button>
+          </div>
+        </div>
+        <div class="accordion__content">
+          <ul class="nav-list">
+            <li class="nav-list__item">
+              <a href="#" class="nav-list__link">
+                <ion-icon
+                  name="compass-outline"
+                  class="nav-list__icon"
+                ></ion-icon>
+                <span>Orientações</span>
+              </a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#" class="nav-list__link">
+                <ion-icon
+                  name="timer-outline"
+                  class="nav-list__icon"
+                ></ion-icon>
+                <span>Desempenho</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- ! NAV ACCORDION -->
+    </div>
+    <!-- ! COMPONENTS -->
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
